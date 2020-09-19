@@ -3562,7 +3562,7 @@ let api = function Binance( options = {} ) {
         
         futuresOrder, // side symbol quantity [price] [params]
         
-        futuresOrderStatus: async ( symbol, params = {} ) => { // Either orderId or origClientOrderId must be sentkjk
+        futuresOrderStatus: async ( symbol, params = {} ) => { // Either WSorderId or origClientOrderId must be sentk  k
             params.symbol = symbol;
             return promiseRequest( 'v1/order', params, { base:fapi, type:'SIGNED' } );
         },
